@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderComponent from '../components/HeaderComponent'
+import FolderScreen from './FolderScreen'
 
 const RecentScreen = () => {
   return (
@@ -7,8 +8,8 @@ const RecentScreen = () => {
         <div className='row'>
         <div className='col-8' style={{backgroundColor:'#fafafa'}}>
             <HeaderComponent/>
+            <FolderScreen/>
         </div>
-        <div className='col bg-white'>sider</div>
         </div>
     </div>
   )

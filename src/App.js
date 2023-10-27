@@ -4,7 +4,7 @@ import React from "react";
 import HomeScreen from "./screens/HomeScreen";
 import { SiderComponent } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { FavouriteScreen, ScheduleScreen, UserScreen } from "./screens";
+import { FavouriteScreen } from "./screens";
 import RecentScreen from "./screens/RecentScreen";
 
 const { Content, Sider } = Layout;
@@ -17,10 +17,8 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<HomeScreen />} />
-          <Route path="/schedule" element={<ScheduleScreen />} />
-          <Route path="/recents" element={<RecentScreen />} />
-          <Route path="/users" element={<UserScreen />} />
-          <Route path="/favourites" element={<FavouriteScreen />} />
+          <Route path="/active" element={<RecentScreen />} />
+          <Route path="/completed" element={<FavouriteScreen />} />
         </Routes>
 
   

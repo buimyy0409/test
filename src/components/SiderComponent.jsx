@@ -1,5 +1,5 @@
 import { Layout, Menu } from 'antd';
-import { CalendarAdd, CloudLightning, Element4, Home, Profile2User, Star1 } from 'iconsax-react';
+import { CloudLightning, Element4, Star1 } from 'iconsax-react';
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
@@ -14,27 +14,17 @@ const SiderComponent = () => {
         {
             key: '',
             icon: <Element4 size={menuOptions.size} color={menuOptions.color}/>,
-            label: 'Home'
+            label: 'All'
         },
         {
-            key: 'schedule',
-            icon: <CalendarAdd size={menuOptions.size} color={menuOptions.color}/>,
-            label:'Schedule'
-        },
-        {
-            key: 'recents',
+            key: 'active',
             icon: <CloudLightning size={menuOptions.size} color={menuOptions.color}/>,
-            label:'Recent'
+            label:'Active'
         },
         {
-            key: 'users',
-            icon: <Profile2User size={menuOptions.size} color={menuOptions.color}/>,
-            label:'Users'
-        },
-        {
-            key: 'favourites',
+            key: 'completed',
             icon: <Star1 size={menuOptions.size} color={menuOptions.color}/>,
-            label:'Favourite'
+            label:'Completed'
 
         }
     ]
